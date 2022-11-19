@@ -1,0 +1,61 @@
+.sidebar{
+    position: absolute;
+    padding:  90px 0px;
+    top: -380px;
+    transition: all 0.5s ease; 
+    width: 250px;
+    height: 220px;
+    text-align: center;
+    
+}
+
+
+label #btn, label #cancel{
+    position: absolute;
+    font-size:30px;
+    color: rgb(163, 17, 17);
+    cursor: pointer;
+    top: 30px;
+    left: 300px;
+    z-index: 1111;
+   
+}
+
+label #cancel{
+    left: 300px;
+    z-index: 1111;
+    opacity: 0;
+    font-size: 30px;
+ }
+
+label #btn{
+    opacity: 1;
+}
+
+
+ #check:checked ~ label #btn{
+    opacity: 0;
+    
+ }
+
+ #check:checked ~ label #cancel{
+    opacity: 1;
+      
+ }
+
+ #check:checked ~ .sidebar{
+   top: -100px;
+ }
+
+ #check{
+    display: none;
+}
+
+.sidebar ul{
+    background-color: rgb(228, 29, 29);
+     
+}
+
+
+
+
