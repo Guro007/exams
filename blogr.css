@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-size: 18px;
+}
+
+.content{
+    background-image: url(images21/bg-pattern-intro-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(228, 35, 35);
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.list{
+    display: flex;
+    gap: 40px;
+    height: 120px;
+     
+}
+
+.navbar{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.navbar li:hover:nth-child(1) .navbar2:nth-child(2){
+    display: block;
+    
+}
+.navbar li:hover:nth-child(2) .navbar2:nth-child(2){
+    display: block;
+   
+}
+.navbar li:hover:nth-child(3) .navbar2:nth-child(2){
+    display: block;
+}
+
+.navbar li{
+    padding: 10px 0px;
+}
+.navbar li a{
+    text-decoration: none;
+    list-style: none;
+    color:  hsl(0, 0%, 100%);
+}
+
+.navbar2{
+    display: none;
+    margin: 20px 0px;
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    position: relative;
+    left: -20px;
+    padding: 25px;
+}
+
+.navbar2 li{
+    padding: 5px;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.navbar2 li a{
+    color: hsl(208, 49%, 24%);
+    
+}
+
+.navbar2 li:hover{
+    color: hsl(208, 49%, 24%);
+    transform: scale(110%);
+}
+
+
+
+.button{
+    height: 120px;
+     
+}
+
+.button button{
+    margin: 0px 20px;
+}
+
+.button button:nth-child(1){
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+}
+.button button:nth-child(2){
+    font-size: 18px;
+    background-color: hsl(0, 0%, 100%);
+    height: 50px;
+    width: 130px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button button a:nth-child(1){
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.button button:nth-child(2) a{
+    color: rgb(233, 73, 73);
+    font-size: 18px;
+}
+
+.button button:nth-child(2):hover{
+    background-color: rgb(233, 73, 73);
+}
+
+
+.button button:nth-child(2):hover a{
+    color: hsl(0, 0%, 100%);
+}
+
+
+span{
+    text-align: center;
+    font-size: 30px;
+}
+
+span p{
+    font-size: 18px;
+    color: white;
+    padding: 20px 0px;
+}
+
+span h1{
+    color: white;
+}
+
+
+
+
+
+
+
+
+#check{
+    display: none;
+}
+label{
+    display: none;
+}
+/* 
+.navbar{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    padding:  10px   0px;
+    left: 120px;
+    transition: all 0.5s ease;
+}
+.navbar ul{
+    list-style: none;
+    margin: 15px 0px;
+    width: 220px;
+   
+}
+.snavbar ul li{
+    padding:   20px 50px;
+    border-bottom: 1px solid rgb(355, 355, 255, 0.1);
+    border-radius: 0px 0px 20px 0px;
+    transition: 0.5s;
+}
+.navbar ul li a{
+    color: blue;
+   
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    left: 300px;
+    font-size:20px;
+    color: blue;
+    cursor: pointer;
+}
+label #cancel{
+    z-index: 1111;
+    transition: all 0.5s ease;
+    opacity: 0;
+ }
+
+label #btn{
+    position: fixed;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+ 
+
+ #check:checked ~ .navbar{
+    left: 0;
+ }
+ #check:checked ~ label #btn{
+    opacity: 0;
+ }
+
+ #check:checked ~ label #cancel{
+    opacity: 1;
+    transition: all 0.5s ease;
+ }
+*/
