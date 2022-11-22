@@ -1,0 +1,162 @@
+@media screen and (min-width:760px){
+    
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        width: 100%;
+        background-color: black;
+        background-image: url(images/3737332.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px  70px;
+        background-color: rgb(57, 65, 65);
+    }
+    
+   
+    
+    .sidebar{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .sidebar li{
+        list-style: none;
+    }
+    
+    .sidebar li a{
+        text-decoration: none;
+        color: rgb(236, 232, 232);
+        font-size: 20px;
+    }
+    
+    
+    #check{
+        display: none;
+    }
+     
+    
+    #btn, #cancel{
+        display: none;
+    }
+    }
+    
+    
+    
+    
+    
+    @media  screen and (max-width:760px) {
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            width: 100%;
+            background-color: black;
+        }
+        
+    
+        #check{
+            display: none;
+        }
+    
+    
+    
+        .header{
+            background-color: rgb(57, 65, 65);
+            width: 100%;
+           position: fixed;
+           height:100vh;
+        }
+    
+    
+        .sidebar{
+            background-image: url(images/gif.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            height: 100%;
+        }
+    
+    .sidebar  li a{
+        color: rgb(240, 240, 241);
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    
+    .sidebar li{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 35px 0px;
+        background-color: rgba(0,0,0,.6);
+        transition: 0.9s;
+        height:auto;
+        position: relative;
+        top:-900px;
+    }
+    
+
+ 
+    
+    
+    #btn, #cancel{
+        left: 700px;
+        top: 8%;
+        font-size: 25px;
+        position: absolute;
+        transform: translateY(-50%);
+        color: white;
+         
+    }
+    
+    .header .logo {
+        padding: 40px 0px;
+        justify-content: center;
+        display: flex;
+    }
+    
+    
+    #check:checked ~ .sidebar li{
+        transform: translateY(900px);
+    }
+    
+    
+    label #cancel{
+        transition: all 0.5s ease;
+        opacity: 0;
+     }
+    
+    label #btn{
+        transition: all 0.5s ease;
+        opacity: 1;
+    }
+    
+    #check:checked ~ label #cancel{
+        opacity: 1;
+    }
+    
+     
+    #check:checked ~ label #btn{
+        opacity: 0;
+    }
+    
+    
+    
+    }
